@@ -1,0 +1,34 @@
+{
+  "name": "Fish Rules",
+  "description": "Fish Rules Changelog Theme",
+  "version": "1.0.0",
+  "license": "MIT",
+  "changelog": {
+    "version": "latest",
+    "email": {
+      "features": {}
+    },
+    "web": {
+      "features": {
+        "themeSwitcher": false,
+        "search": true,
+        "tags": true,
+        "tagFilter": true,
+        "authors": true,
+        "claps": true,
+        "pageviews": true,
+        "highfive": true,
+        "social": true
+      }
+    },
+    "site": "fishrules"
+  },
+  "scripts": {
+    "build": "npx @pinpt/changelog build --site fishrules --theme .",
+    "dev": "npx @pinpt/changelog dev --site fishrules  --theme .",
+    "package": "npx @pinpt/changelog package --site fishrules"
+  },
+  "dependencies": {
+    "@pinpt/changelog": "^2.0.3"
+  }
+}
