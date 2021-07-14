@@ -85,6 +85,10 @@ header .title {
   @apply mx-4 sm:mx-0;
 }
 
+.page > main > .content-wrapper aside.bottom {
+  @apply mt-4 mb-14;
+}
+
 .page > main > .content-wrapper > section {
   @apply pt-0 border-none;
 }
