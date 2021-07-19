@@ -4,7 +4,8 @@
 :root {
   --page-bg-color: #000e4a;
   --page-text-color: white;
-  --page-tertiary-text-color: #3B82F6;
+  --page-tertiary-text-color: #3B82F6; /* deprecated */
+  --page-highlight-color: #3B82F6;
 
   --header-bg-color: transparent;
 
@@ -12,6 +13,8 @@
 
   --tile-title-color: #000e4a;
 
+  --article-bg-color: white;
+  --article-text-color: black;
   --article-info-color: #ffffff99;
   --article-border-color: #E4E4E7;
   --article-block-bg-color: #FAFAFA;
@@ -74,12 +77,16 @@ header .title {
   background-color: var(--section-bg-color);
 }
 
-.page > main > .content-wrapper {
+.page > main .content-wrapper {
   @apply px-0 sm:px-8;
 }
 
 .page > main > .content-wrapper aside {
   @apply mx-4 sm:mx-0;
+}
+
+.page > main > .content-wrapper aside.bottom {
+  @apply mt-4 mb-14;
 }
 
 .page > main > .content-wrapper > section {
@@ -90,3 +97,6 @@ header .title {
 	@apply py-4 px-4 sm:p-8 sm:rounded sm:shadow bg-white w-full;
 }
 
+.page .pagination .content-wrapper .content {
+  @apply mx-4 sm:mx-0 md:ml-[25%];
+}
