@@ -3,8 +3,7 @@
 	<div class="content-wrapper">
 
 		<div class="left">
-
-			<ul class="flex items-center flex-wrap justify-center sm:justify-start">
+			<ul class="flex items-center flex-wrap justify-center lg:justify-start">
 				<li class="block my-2">
 					<a href="https://apps.apple.com/us/app/fish-rules-2013/id597875361?ls=1">
 						<img
@@ -23,14 +22,19 @@
 						/>
 					</a>
 				</li>
-				<li class="block flex-shrink-0 my-2">
-					<a
-						href="https://app.fishrulesapp.com"
-						class="text-blue-200 text-sm bg-blue-900 border border-solid border-blue-700 hover:bg-blue-700 hover:text-white font-bold uppercase px-4 py-3 rounded-lg outline-none focus:outline-none whitespace-nowrap"
-						style="transition:all .15s ease">Use the Web App
-					</a>
-				</li>
 			</ul>
+		</div>
+
+		<div class="center">
+			<a href="/">
+				<img class="w-64 cursor-pointer" src="https://fishrulesapp.com/images/logo-lg.png" alt="Fish Rules">
+			</a>
+			
+			{{!-- <a href="/" class="title">
+				<h1>{{site.theme.title}}</h1>
+			</a> --}}
+			
+			{{include src="subscribe.hbs"}}
 		</div>
 
 		<div class="right">

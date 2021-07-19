@@ -56,12 +56,30 @@ h1, h2, h3, h4 {
   @apply mb-8 md:mb-0 flex items-center;
 }
 
+.toolbar .center {
+  @apply my-5 items-center;
+}
+
 .toolbar .search {
   @apply opacity-50 focus-within:opacity-100 focus-within:bg-[#000e4a];
 }
 
 header .title {
   @apply mt-10 text-4xl;
+}
+
+.page > main aside .authors,
+.taglist,
+.highfive {
+  display: none;
+}
+
+.subscribe {
+  @apply text-blue-300 font-bold mt-3 block text-center;
+}
+
+header {
+  padding: 0;
 }
 
 
@@ -73,8 +91,8 @@ header .title {
 }
 
 .page > main {
-  @apply pt-14;
-  background-color: var(--section-bg-color);
+  @apply pt-0;
+  /* background-color: var(--section-bg-color); */
 }
 
 .page > main .content-wrapper {
@@ -99,4 +117,8 @@ header .title {
 
 .page .pagination .content-wrapper .content {
   @apply mx-4 sm:mx-0 md:ml-[25%];
+}
+
+footer {
+  background-color: #010101;
 }
