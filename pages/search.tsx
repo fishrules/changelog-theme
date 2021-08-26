@@ -70,7 +70,7 @@ export default function Search(props: SearchProps) {
 				handleRemoveFromQuery={handleRemoveFromQuery}
 				handleAddTagToQuery={handleAddToQuery}
 				renderCardStatistics={() => <></>}
-				renderHeader={(site) => <Header site={site} />}
+				renderHeader={() => <Header />}
 				renderFooter={(site) => <Footer site={site} />}
 				renderTags={() => <></>}
 			/>

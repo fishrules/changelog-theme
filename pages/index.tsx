@@ -41,7 +41,7 @@ export default function Home(props: HomeProps) {
 				handleAddTagToQuery={(value) => router.push(`/search?tags=${encodeURIComponent(JSON.stringify([value]))}`)}
 				pageForward={after ? () => router.push(`/entries/2/${after.dateAt}/${pageCount}`) : undefined}
 				analytics={analytics}
-				renderHeader={(site) => <Header site={site} />}
+				renderHeader={() => <Header />}
 				renderFooter={(site) => <Footer site={site} />}
 				renderTags={() => <></>}
 			/>

@@ -73,7 +73,7 @@ export default function EntryPage(props: EntryPageProps) {
 				nextEntry={after}
 				previousEntry={before}
 				handleSelectEntry={(content) => router.push(new URL(content.url).pathname)}
-				renderHeader={(site) => <Header site={site} />}
+				renderHeader={() => <Header />}
 				renderFooter={(site) => <Footer site={site} />}
 				renderAuthor={() => <></>}
 				renderTags={() => <></>}
