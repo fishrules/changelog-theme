@@ -51,7 +51,7 @@ export default function Page(props: PageProps) {
 				pageNumber={pageNumber}
 				pageCount={pageCount}
 				analytics={analytics}
-				renderHeader={(site) => <Header site={site} />}
+				renderHeader={() => <Header />}
 				renderFooter={(site) => <Footer site={site} />}
 				renderTags={() => <></>}
 			/>
