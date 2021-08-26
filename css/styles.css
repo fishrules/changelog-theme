@@ -1,0 +1,84 @@
+/**
+ * colors
+ */
+:root {
+	--page-bg-color: #000e4a;
+	--page-text-color: white;
+	--page-highlight-color: #3B82F6;
+  
+	--header-bg-color: transparent;
+	--header-control-color: #FFFFFF66;
+  
+	--section-bg-color: #00115B66;
+  
+	--card-title-color: #000e4a;
+	--card-empty-gradient-from: #1e3a8a;
+	--card-empty-gradient-to: #3b82f6;
+  
+	--article-bg-color: transparent;
+	--article-text-color: black;
+	--article-info-color: #ffffff99;
+	--article-border-color: #E4E4E7;
+	--article-block-bg-color: #FAFAFA;
+
+	--footer-bg-color: #010101;
+}
+  
+  
+/**
+* background image
+*/
+body > div::after {
+	@apply absolute top-0 left-0 w-full h-full opacity-25;
+	content: " ";
+	background-image: url('https://fishrulesapp.com/images/contour-blue.png');
+	background-repeat: no-repeat;
+	z-index: -1;
+}
+
+  
+/**
+* global
+*/
+h1, h2, h3, h4 {
+	@apply !font-medium;
+}
+  
+
+/**
+* header
+*/
+.Pinpoint.Search.Bar {
+	background-color: #000e4a99;
+}
+  
+  
+/**
+* content
+*/
+.Pinpoint.entryWrapper .constraint {
+	@apply px-0 md:px-10;
+}
+
+.Pinpoint.entryWrapper .container,
+.Pinpoint.entryWrapper .entry {
+	@apply pt-0 border-t-0;
+}
+
+.Pinpoint.entryWrapper article {
+	@apply p-4 sm:!p-8 sm:rounded;
+	background-color: white;
+}
+
+.Pinpoint.sidebarWrapper {
+	@apply mx-4 sm:!mx-8;
+}
+
+.Pinpoint.entryWrapper .sidebarWrapper.after {
+	@apply mt-4;
+}
+
+.Pinpoint.paginationWrapper .constraint {
+	@apply px-4 sm:!px-8 md:!px-10;
+}
+
