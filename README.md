@@ -1,3 +1,1 @@
-# Changelog.so Theme
-
-Theme for Changelog.so
+# Fishrules Changelog App

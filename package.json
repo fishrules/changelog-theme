@@ -1,35 +1,35 @@
 {
-  "name": "Fish Rules",
-  "description": "Fish Rules Changelog Theme",
-  "version": "1.0.0",
-  "license": "MIT",
-  "changelog": {
-    "version": "latest",
-    "email": {
-      "features": {}
-    },
-    "web": {
-      "features": {
-        "themeSwitcher": false,
-        "search": true,
-        "tags": true,
-        "tagFilter": true,
-        "authors": true,
-        "claps": true,
-        "pageviews": true,
-        "highfive": true,
-        "share": true,
-        "social": true
-      }
-    },
-    "site": "fishrules"
-  },
-  "scripts": {
-    "build": "npx @pinpt/changelog build --site fishrules --theme .",
-    "dev": "npx @pinpt/changelog dev --site fishrules  --theme .",
-    "package": "npx @pinpt/changelog package --site fishrules"
-  },
-  "dependencies": {
-    "@pinpt/changelog": "^2.0.3"
-  }
+	"name": "fishrules",
+	"version": "0.2.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"format": "prettier --write .",
+		"lint": "next lint",
+		"login": "pinpt login",
+		"logout": "pinpt logout",
+		"deploy": "pinpt deploy"
+	},
+	"dependencies": {
+		"@pinpt/cli": "^0.0.6",
+		"@pinpt/email": "^0.0.6",
+		"@pinpt/react": "^0.6.1",
+		"encoding": "^0.1.13",
+		"next": "11.1.0",
+		"react": "17.0.2",
+		"react-dom": "17.0.2"
+	},
+	"devDependencies": {
+		"@tailwindcss/aspect-ratio": "^0.2.1",
+		"@types/react": "17.0.15",
+		"autoprefixer": "^10.3.1",
+		"eslint": "7.32.0",
+		"eslint-config-next": "11.0.1",
+		"postcss": "^8.3.6",
+		"prettier": "^2.3.2",
+		"tailwindcss": "^2.2.7",
+		"typescript": "4.3.5"
+	}
 }
