@@ -1,18 +1,12 @@
 import NextHead from 'next/head';
 import { useRouter } from 'next/router';
 import {
-	Analytics,
-	fetchAnalytics,
-	fetchContentPaginated,
-	fetchSiteWithContentCount,
-	Head,
-	IContent,
-	ISite,
-	Prebuilt,
+	Analytics, fetchAnalytics, fetchContentPaginated, fetchSiteWithContentCount, Head, IContent,
+	ISite, Prebuilt
 } from '@pinpt/react';
-import config from '../../pinpoint.config';
-import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+import Header from '../../components/Header';
+import config from '../../pinpoint.config';
 
 interface PageProps {
 	pageNumber: number;
@@ -115,6 +109,6 @@ export async function getStaticProps({ params }: { params: { id: [string, string
 			pageCount,
 			analytics,
 		},
-		revalidate: 60, // TODO: set low and cache on proxy
+		revalidate: 1,
 	};
 }
