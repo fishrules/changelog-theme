@@ -2,19 +2,12 @@ import NextHead from 'next/head';
 import { useRouter } from 'next/router';
 import { useCallback, useEffect, useState } from 'react';
 import {
-	Banner,
-	createClap,
-	fetchContent,
-	fetchContentAnalytics,
-	fetchContentPaginated,
-	Head,
-	IContent,
-	ISite,
-	Prebuilt
+	Banner, createClap, fetchContent, fetchContentAnalytics, fetchContentPaginated, Head, IContent,
+	ISite, Prebuilt
 } from '@pinpt/react';
-import config from '../../pinpoint.config';
-import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+import Header from '../../components/Header';
+import config from '../../pinpoint.config';
 
 interface EntryPageProps {
 	content: IContent;
@@ -119,6 +112,6 @@ export async function getStaticProps({
 			after,
 			preview: !!preview,
 		},
-		revalidate: 60, // TODO: set low and cache on proxy
+		revalidate: 1,
 	};
 }
