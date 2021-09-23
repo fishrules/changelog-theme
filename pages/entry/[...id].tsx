@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import { useCallback, useEffect, useState } from 'react';
 import {
 	Banner, createClap, fetchContent, fetchContentAnalytics, fetchContentPaginated, Head, IContent,
-	ISite, Prebuilt
+	ISite, PrebuiltEntry
 } from '@pinpt/react';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
@@ -57,7 +57,7 @@ export default function EntryPage(props: EntryPageProps) {
 				<Head site={site} content={content} />
 			</NextHead>
 			{preview && <PreviewBanner />}
-			<Prebuilt.Entry
+			<PrebuiltEntry
 				content={content}
 				site={site}
 				onClap={onClap}

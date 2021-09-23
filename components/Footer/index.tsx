@@ -1,4 +1,4 @@
-import { ISite, Prebuilt } from '@pinpt/react';
+import { ISite, PrebuiltFooter } from '@pinpt/react';
 import Logo from '../Logo';
 
 export interface FooterProps {
@@ -8,7 +8,7 @@ export interface FooterProps {
 const Footer = (props: FooterProps) => {
 	const { site } = props;
 	return (
-		<Prebuilt.Footer site={site} renderLogo={() => <Logo />} />
+		<PrebuiltFooter site={site} renderLogo={() => <Logo />} />
 	);
 };
 
