@@ -82,3 +82,28 @@ h1, h2, h3, h4 {
 	@apply px-4 sm:!px-8 md:!px-10;
 }
 
+.Pinpoint.SubscriptionSubscribe.Description,
+.Pinpoint.SubscriptionManage.Description {
+	@apply text-gray-300;
+}
+
+.Pinpoint.SubscriptionSubscribe .Pinpoint.Field.Label,
+.Pinpoint.SubscriptionVerify .Pinpoint.Field.Label {
+	@apply text-gray-300;
+}
+
+.Pinpoint.SubscriptionManage.SiteName {
+	@apply text-gray-800;
+}
+
+.Pinpoint.SubscriptionVerify .Pinpoint.Form.Heading h1 {
+	@apply text-white;
+}
+
+.Pinpoint.SubscriptionVerify .Pinpoint.Form.Heading h2 {
+	@apply text-gray-300;
+}
+
+.Pinpoint.SubscriptionUnsubscribe.Manage {
+	@apply text-gray-300;
+}
